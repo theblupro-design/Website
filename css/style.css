@@ -3,38 +3,25 @@
    ============================================= */
 
 /* =============================================
-   Seafood Watermark
+   Seafood Watermark — Brochure illustration background
    ============================================= */
 .seafood-watermark {
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  overflow: hidden;
+  background-image: url('../assets/brochure-cover.png');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  opacity: 0.06;
 }
-
-.wm-item {
-  position: absolute;
-  mix-blend-mode: multiply;
-  opacity: 0.07;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-.wm-item--1  { width: 240px; top:  4%;  left:  -5%;  transform: rotate(-18deg); }
-.wm-item--2  { width: 200px; top:  6%;  right: -4%;  transform: rotate(22deg); }
-.wm-item--3  { width: 185px; top: 26%;  left:   1%;  transform: rotate(-8deg); }
-.wm-item--4  { width: 210px; top: 23%;  right:  0%;  transform: rotate(32deg); }
-.wm-item--5  { width: 175px; top: 46%;  left:  -3%;  transform: rotate(14deg); }
-.wm-item--6  { width: 220px; top: 44%;  right: -2%;  transform: rotate(-26deg); }
-.wm-item--7  { width: 195px; top: 64%;  left:   4%;  transform: rotate(20deg); }
-.wm-item--8  { width: 230px; top: 61%;  right:  2%;  transform: rotate(-13deg); }
-.wm-item--9  { width: 195px; bottom: 9%; left:   2%;  transform: rotate(-22deg); }
-.wm-item--10 { width: 215px; bottom: 4%; right: -4%;  transform: rotate(17deg); }
 
 @media (max-width: 768px) {
-  .wm-item { opacity: 0.05; }
-  .wm-item--1, .wm-item--3, .wm-item--5, .wm-item--7, .wm-item--9 { display: none; }
+  .seafood-watermark {
+    opacity: 0.04;
+    background-position: center center;
+  }
 }
 
 :root {
