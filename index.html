@@ -12,11 +12,26 @@
   <link rel="icon" href="assets/logo-icon.svg" type="image/svg+xml">
 </head>
 <body>
+
+  <!-- Seafood watermark — scattered images, barely visible -->
+  <div class="seafood-watermark" aria-hidden="true">
+    <img src="assets/brochure-imgs/p11_img2.png" alt="" class="wm-item wm-item--1">
+    <img src="assets/brochure-imgs/p11_img1.png" alt="" class="wm-item wm-item--2">
+    <img src="assets/brochure-imgs/p5_img0.png"  alt="" class="wm-item wm-item--3">
+    <img src="assets/brochure-imgs/p5_img2.png"  alt="" class="wm-item wm-item--4">
+    <img src="assets/brochure-imgs/p6_img2.png"  alt="" class="wm-item wm-item--5">
+    <img src="assets/brochure-imgs/p9_img3.png"  alt="" class="wm-item wm-item--6">
+    <img src="assets/brochure-imgs/p5_img3.png"  alt="" class="wm-item wm-item--7">
+    <img src="assets/brochure-imgs/p11_img2.png" alt="" class="wm-item wm-item--8">
+    <img src="assets/brochure-imgs/p5_img0.png"  alt="" class="wm-item wm-item--9">
+    <img src="assets/brochure-imgs/p11_img1.png" alt="" class="wm-item wm-item--10">
+  </div>
+
   <!-- Navigation -->
   <header class="header" id="header">
     <nav class="nav container">
       <a href="#" class="nav__logo">
-        <img src="assets/logo.svg" alt="THE BLU PRO" class="nav__logo-img">
+        <img src="assets/logo-real.jpg" alt="THE BLU PRO" class="nav__logo-img">
       </a>
       <ul class="nav__links">
         <li><a href="#why">Why THE BLU PRO</a></li>
@@ -24,7 +39,7 @@
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="https://wa.me/919876543210" class="btn btn--primary btn--sm nav__cta" target="_blank" rel="noopener">Order on WhatsApp</a>
+      <a href="https://wa.me/919281088053" class="btn btn--primary btn--sm nav__cta" target="_blank" rel="noopener">Order on WhatsApp</a>
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -47,18 +62,22 @@
             Premium seafood delivered from Suryalanka Coast to Hyderabad within 24 hours.
           </p>
           <div class="hero__actions">
-            <a href="https://wa.me/919876543210" class="btn btn--primary" target="_blank" rel="noopener">
+            <a href="https://wa.me/919281088053" class="btn btn--primary" target="_blank" rel="noopener">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               Order on WhatsApp
             </a>
             <a href="#products" class="btn btn--outline">View Products</a>
+            <a href="assets/blupro-brochure.pdf" class="btn btn--ghost" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Brochure
+            </a>
           </div>
         </div>
         <div class="hero__visual">
           <div class="hero__logo-wrap">
             <div class="hero__circle hero__circle--outer"></div>
             <div class="hero__circle hero__circle--inner"></div>
-            <img src="assets/logo.svg" alt="THE BLU PRO" class="hero__logo">
+            <img src="assets/logo-real.jpg" alt="THE BLU PRO" class="hero__logo">
           </div>
         </div>
       </div>
@@ -119,114 +138,403 @@
       </div>
     </section>
 
+    <!-- Nutritional Benefits -->
+    <section class="nutrition">
+      <div class="container">
+        <header class="section-header section-header--light">
+          <p class="section-header__eyebrow">Health First</p>
+          <h2 class="section-header__title">Why Seafood?</h2>
+          <p class="section-header__desc section-header__desc--muted">Every pack of THE BLU PRO seafood is a powerhouse of nutrition, straight from the sea.</p>
+        </header>
+        <div class="nutrition__grid">
+          <div class="nutrition__item">
+            <div class="nutrition__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h4 class="nutrition__title">Omega-3 Power</h4>
+            <p class="nutrition__desc">Boost brain health and heart function with essential fatty acids.</p>
+          </div>
+          <div class="nutrition__item">
+            <div class="nutrition__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </div>
+            <h4 class="nutrition__title">Vitamin Rich</h4>
+            <p class="nutrition__desc">Daily dose of Vitamin D, B12 and more for optimal health.</p>
+          </div>
+          <div class="nutrition__item">
+            <div class="nutrition__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <h4 class="nutrition__title">Low-Fat</h4>
+            <p class="nutrition__desc">Enjoy delicious seafood without compromising your health goals.</p>
+          </div>
+          <div class="nutrition__item">
+            <div class="nutrition__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h4 class="nutrition__title">Protein Packed</h4>
+            <p class="nutrition__desc">Build and repair muscle with high-quality lean protein.</p>
+          </div>
+          <div class="nutrition__item">
+            <div class="nutrition__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            </div>
+            <h4 class="nutrition__title">Sustainable</h4>
+            <p class="nutrition__desc">Sourced from responsible, sustainable fishing practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Products -->
     <section class="products" id="products">
       <div class="container">
         <header class="section-header">
           <p class="section-header__eyebrow">Our Selection</p>
           <h2 class="section-header__title">Premium Products</h2>
-          <p class="section-header__desc">Handpicked from the coast. Cleaned, packed, and ready for your kitchen.</p>
+          <p class="section-header__desc">20+ varieties handpicked from the coast. Available in 250g | 500g | 1kg packs.</p>
         </header>
         <div class="products__filters" role="tablist" aria-label="Product categories">
-          <button class="filter-btn filter-btn--active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="filter-btn" data-filter="shrimp" role="tab" aria-selected="false">Shrimp</button>
-          <button class="filter-btn" data-filter="fish" role="tab" aria-selected="false">Fish</button>
-          <button class="filter-btn" data-filter="crab" role="tab" aria-selected="false">Crab</button>
-          <button class="filter-btn" data-filter="combo" role="tab" aria-selected="false">Combos</button>
+          <button type="button" class="filter-btn filter-btn--active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button type="button" class="filter-btn" data-filter="prawns" role="tab" aria-selected="false">Prawns</button>
+          <button type="button" class="filter-btn" data-filter="saltwater" role="tab" aria-selected="false">Salt Water Fish</button>
+          <button type="button" class="filter-btn" data-filter="freshwater" role="tab" aria-selected="false">Fresh Water Fish</button>
+          <button type="button" class="filter-btn" data-filter="crab" role="tab" aria-selected="false">Crab</button>
+          <button type="button" class="filter-btn" data-filter="combo" role="tab" aria-selected="false">Combos</button>
         </div>
         <div class="products__grid">
-          <article class="product-card" data-category="shrimp">
+
+          <!-- PRAWNS -->
+          <article class="product-card" data-category="prawns">
             <div class="product-card__image">
-              <div class="product-card__placeholder">
-                <img src="assets/logo-icon.svg" alt="" width="48" height="48" aria-hidden="true">
-              </div>
+              <img src="assets/brochure-imgs/p11_img2.png" alt="Jumbo Tiger Prawns" class="product-card__img">
               <span class="product-card__badge">Bestseller</span>
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Jumbo Tiger Prawns</h3>
-              <p class="product-card__desc">Deveined, tail-on. 500g pack.</p>
+              <p class="product-card__desc">Deveined, tail-on. 250g | 500g | 1kg.</p>
               <div class="product-card__footer">
-                <span class="product-card__price">₹899</span>
-                <a href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20to%20order%20Jumbo%20Tiger%20Prawns" class="product-card__order" target="_blank" rel="noopener">Order</a>
+                <span class="product-card__price">₹899 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Jumbo%20Tiger%20Prawns" class="product-card__order" target="_blank" rel="noopener">Order</a>
               </div>
             </div>
           </article>
-          <article class="product-card" data-category="shrimp">
+
+          <article class="product-card" data-category="prawns">
             <div class="product-card__image">
-              <div class="product-card__placeholder">
-                <img src="assets/logo-icon.svg" alt="" width="48" height="48" aria-hidden="true">
-              </div>
+              <img src="assets/brochure-imgs/p11_img1.png" alt="White Prawns" class="product-card__img">
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__title">Medium White Prawns</h3>
-              <p class="product-card__desc">Cleaned &amp; deveined. 500g pack.</p>
+              <h3 class="product-card__title">White Prawns</h3>
+              <p class="product-card__desc">Cleaned &amp; deveined. 250g | 500g | 1kg.</p>
               <div class="product-card__footer">
-                <span class="product-card__price">₹549</span>
-                <a href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20to%20order%20Medium%20White%20Prawns" class="product-card__order" target="_blank" rel="noopener">Order</a>
+                <span class="product-card__price">₹549 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20White%20Prawns" class="product-card__order" target="_blank" rel="noopener">Order</a>
               </div>
             </div>
           </article>
-          <article class="product-card" data-category="fish">
+
+          <article class="product-card" data-category="prawns">
             <div class="product-card__image">
-              <div class="product-card__placeholder">
-                <img src="assets/logo-icon.svg" alt="" width="48" height="48" aria-hidden="true">
-              </div>
+              <img src="assets/brochure-imgs/p11_img0.png" alt="Sea Prawns" class="product-card__img">
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__title">Seer Fish Steaks</h3>
-              <p class="product-card__desc">Boneless cuts, vacuum sealed. 400g.</p>
+              <h3 class="product-card__title">Sea Prawns</h3>
+              <p class="product-card__desc">Fresh, shell-on. 250g | 500g | 1kg.</p>
               <div class="product-card__footer">
-                <span class="product-card__price">₹749</span>
-                <a href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20to%20order%20Seer%20Fish%20Steaks" class="product-card__order" target="_blank" rel="noopener">Order</a>
+                <span class="product-card__price">₹449 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Sea%20Prawns" class="product-card__order" target="_blank" rel="noopener">Order</a>
               </div>
             </div>
           </article>
-          <article class="product-card" data-category="fish">
+
+          <!-- SALT WATER FISH -->
+          <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <div class="product-card__placeholder">
-                <img src="assets/logo-icon.svg" alt="" width="48" height="48" aria-hidden="true">
-              </div>
+              <img src="assets/brochure-imgs/p5_img3.png" alt="Sea Bass" class="product-card__img">
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__title">Pomfret Fillets</h3>
-              <p class="product-card__desc">Skinless, boneless. 350g pack.</p>
+              <h3 class="product-card__title">Sea Bass</h3>
+              <p class="product-card__desc">Cleaned &amp; cut. 250g | 500g | 1kg.</p>
               <div class="product-card__footer">
-                <span class="product-card__price">₹699</span>
-                <a href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20to%20order%20Pomfret%20Fillets" class="product-card__order" target="_blank" rel="noopener">Order</a>
+                <span class="product-card__price">₹799 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Sea%20Bass" class="product-card__order" target="_blank" rel="noopener">Order</a>
               </div>
             </div>
           </article>
-          <article class="product-card" data-category="crab">
+
+          <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <div class="product-card__placeholder">
-                <img src="assets/logo-icon.svg" alt="" width="48" height="48" aria-hidden="true">
-              </div>
+              <img src="assets/brochure-imgs/p5_img1.png" alt="Seer Fish" class="product-card__img">
+              <span class="product-card__badge">Popular</span>
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__title">Blue Crab Meat</h3>
-              <p class="product-card__desc">Hand-picked, pasteurized. 250g.</p>
+              <h3 class="product-card__title">Seer Fish (Vanjaram)</h3>
+              <p class="product-card__desc">Boneless steaks, vacuum sealed. 250g | 500g | 1kg.</p>
               <div class="product-card__footer">
-                <span class="product-card__price">₹599</span>
-                <a href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20to%20order%20Blue%20Crab%20Meat" class="product-card__order" target="_blank" rel="noopener">Order</a>
+                <span class="product-card__price">₹899 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Seer%20Fish" class="product-card__order" target="_blank" rel="noopener">Order</a>
               </div>
             </div>
           </article>
+
+          <article class="product-card" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p5_img2.png" alt="Grouper" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Grouper</h3>
+              <p class="product-card__desc">Whole or fillets. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹749 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Grouper" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p5_img0.png" alt="Silver Pomfret" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Silver Pomfret</h3>
+              <p class="product-card__desc">Skinless, boneless fillets. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹699 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Silver%20Pomfret" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p6_img0.png" alt="Black Pomfret" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Black Pomfret</h3>
+              <p class="product-card__desc">Whole, cleaned. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹649 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Black%20Pomfret" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p6_img1.png" alt="Indian Mackerel" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Indian Mackerel</h3>
+              <p class="product-card__desc">Whole, gutted. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹399 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Indian%20Mackerel" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p6_img2.png" alt="Ribbon Fish" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Ribbon Fish</h3>
+              <p class="product-card__desc">Cleaned &amp; cut. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹449 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Ribbon%20Fish" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p6_img3.png" alt="Red Grouper" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Red Grouper</h3>
+              <p class="product-card__desc">Whole or fillets. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹799 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Red%20Grouper" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p7_img0.png" alt="Milk Shark" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Milk Shark</h3>
+              <p class="product-card__desc">Cleaned &amp; cut. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹599 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Milk%20Shark" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card product-card--dark" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p7_img1.png" alt="Indian Squid" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Indian Squid</h3>
+              <p class="product-card__desc">Cleaned, tube &amp; tentacles. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹549 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Indian%20Squid" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p7_img3.png" alt="Indian Salmon" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Indian Salmon</h3>
+              <p class="product-card__desc">Steaks, vacuum sealed. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹699 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Indian%20Salmon" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="saltwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p8_img0.png" alt="Mullet Fish" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Mullet Fish</h3>
+              <p class="product-card__desc">Whole, cleaned. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹449 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Mullet%20Fish" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- FRESH WATER FISH -->
+          <article class="product-card" data-category="freshwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p9_img0.png" alt="Rohu Fish" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Rohu Fish</h3>
+              <p class="product-card__desc">Cleaned &amp; cut. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹349 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Rohu%20Fish" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="freshwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p9_img3.png" alt="Catla Fish" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Catla Fish</h3>
+              <p class="product-card__desc">Whole, cleaned. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹299 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Catla%20Fish" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="freshwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p9_img1.png" alt="Mrigal" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Mrigal</h3>
+              <p class="product-card__desc">Cleaned &amp; cut. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹299 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Mrigal" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="freshwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p9_img2.png" alt="Grass Carp" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Grass Carp</h3>
+              <p class="product-card__desc">Whole, cleaned. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹349 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Grass%20Carp" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="freshwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p10_img0.png" alt="Murrel" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Murrel (Snakehead)</h3>
+              <p class="product-card__desc">Boneless fillets. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹499 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Murrel" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="freshwater">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p10_img2.png" alt="Chinese Pomfret" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Chinese Pomfret</h3>
+              <p class="product-card__desc">Whole, cleaned. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹549 <small>/500g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Chinese%20Pomfret" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CRAB -->
+          <article class="product-card product-card--dark" data-category="crab">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p7_img2.png" alt="Blue Crab" class="product-card__img">
+              <span class="product-card__badge">Premium</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Blue Crab</h3>
+              <p class="product-card__desc">Hand-picked, pasteurized. 250g | 500g | 1kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹599 <small>/250g</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Blue%20Crab" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- COMBOS -->
           <article class="product-card" data-category="combo">
             <div class="product-card__image">
-              <div class="product-card__placeholder">
-                <img src="assets/logo-icon.svg" alt="" width="48" height="48" aria-hidden="true">
-              </div>
+              <img src="assets/brochure-imgs/p5_img2.png" alt="Coastal Feast Combo" class="product-card__img">
               <span class="product-card__badge product-card__badge--accent">New</span>
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Coastal Feast Combo</h3>
-              <p class="product-card__desc">Prawns + Seer + Crab. Serves 4.</p>
+              <p class="product-card__desc">Tiger Prawns + Seer Fish + Blue Crab. Serves 4.</p>
               <div class="product-card__footer">
                 <span class="product-card__price">₹1,999</span>
-                <a href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20to%20order%20Coastal%20Feast%20Combo" class="product-card__order" target="_blank" rel="noopener">Order</a>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Coastal%20Feast%20Combo" class="product-card__order" target="_blank" rel="noopener">Order</a>
               </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
@@ -294,12 +602,15 @@
     <!-- CTA Banner -->
     <section class="cta-banner">
       <div class="container cta-banner__inner">
-        <img src="assets/logo.svg" alt="THE BLU PRO" class="cta-banner__logo">
+        <img src="assets/logo-real.jpg" alt="THE BLU PRO" class="cta-banner__logo">
         <div class="cta-banner__content">
           <h2 class="cta-banner__title">Ready for the freshest catch?</h2>
           <p class="cta-banner__desc">Order now and receive premium seafood at your doorstep within 24 hours.</p>
         </div>
-        <a href="https://wa.me/919876543210" class="btn btn--primary" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a href="https://wa.me/919281088053" class="btn btn--primary" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Order on WhatsApp
+        </a>
       </div>
     </section>
   </main>
@@ -309,18 +620,22 @@
     <div class="container footer__grid">
       <div class="footer__brand">
         <a href="#" class="footer__logo">
-          <img src="assets/logo.svg" alt="THE BLU PRO" class="footer__logo-img">
+          <img src="assets/logo-real.jpg" alt="THE BLU PRO" class="footer__logo-img">
         </a>
         <p class="footer__tagline">Premium seafood from the Suryalanka Coast to your table.</p>
+        <a href="assets/blupro-brochure.pdf" class="footer__brochure" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Brochure
+        </a>
       </div>
       <div class="footer__contact">
         <h3 class="footer__heading">Contact</h3>
         <ul class="footer__list">
           <li>
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener">+91 98765 43210</a>
+            <a href="https://wa.me/919281088053" target="_blank" rel="noopener">+91 92810 88053</a>
           </li>
           <li>
-            <a href="mailto:hello@blupro.in">hello@blupro.in</a>
+            <a href="mailto:theblupro@gmail.com">theblupro@gmail.com</a>
           </li>
           <li>Hyderabad, Telangana</li>
         </ul>
@@ -333,7 +648,7 @@
         </ul>
       </div>
       <div class="footer__cta">
-        <a href="https://wa.me/919876543210" class="btn btn--primary btn--full" target="_blank" rel="noopener">
+        <a href="https://wa.me/919281088053" class="btn btn--primary btn--full" target="_blank" rel="noopener">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Chat on WhatsApp
         </a>
