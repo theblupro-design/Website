@@ -14,12 +14,13 @@
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
-  opacity: 0.06;
+  opacity: 0.07;
+  mix-blend-mode: multiply;
 }
 
 @media (max-width: 768px) {
   .seafood-watermark {
-    opacity: 0.04;
+    opacity: 0.05;
     background-position: center center;
   }
 }
@@ -170,8 +171,8 @@ button {
 .section-header__title {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 500;
-  color: var(--text);
+  font-weight: 700;
+  color: var(--blue);
   margin-bottom: 16px;
   line-height: 1.2;
 }
@@ -202,8 +203,8 @@ button {
   isolation: isolate;
   height: var(--header-height);
   background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   transition: box-shadow var(--transition);
 }
@@ -241,8 +242,8 @@ button {
 
 .nav__links a {
   font-size: 14px;
-  font-weight: 500;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: var(--blue-dark);
   transition: color var(--transition);
   position: relative;
 }
@@ -259,7 +260,7 @@ button {
 }
 
 .nav__links a:hover {
-  color: var(--blue);
+  color: var(--orange);
 }
 
 .nav__links a:hover::after {
@@ -300,6 +301,19 @@ button {
   color: var(--text);
   border-color: rgba(0, 0, 0, 0.25);
   transform: translateY(-1px);
+}
+
+/* Orange CTA — used for WhatsApp / order buttons */
+.btn--orange {
+  background: var(--orange);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(250, 129, 80, 0.35);
+}
+
+.btn--orange:hover {
+  background: #e86e3a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(250, 129, 80, 0.45);
 }
 
 /* =============================================
@@ -445,9 +459,9 @@ main, .footer {
 .hero__title {
   font-family: var(--font-heading);
   font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.05;
-  color: var(--text);
+  color: var(--blue);
   margin-bottom: 28px;
 }
 
@@ -456,7 +470,7 @@ main, .footer {
 }
 
 .hero__line--accent {
-  color: var(--blue);
+  color: var(--orange);
 }
 
 .hero__subtitle {
@@ -538,7 +552,7 @@ main, .footer {
    ============================================= */
 .why {
   padding: 100px 0;
-  background: var(--neutral);
+  background: var(--white);
 }
 
 .why__grid {
@@ -553,7 +567,8 @@ main, .footer {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition);
-  border: 1px solid rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 3px solid var(--orange);
 }
 
 .feature-card:hover {
@@ -562,27 +577,32 @@ main, .footer {
 }
 
 .feature-card__icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--orange-subtle);
-  border-radius: var(--radius-md);
+  background: var(--orange);
+  border-radius: 50%;
   margin-bottom: 20px;
-  color: var(--blue);
+  color: var(--white);
+  transition: background var(--transition);
+}
+
+.feature-card:hover .feature-card__icon {
+  background: #e86e3a;
 }
 
 .feature-card__icon svg {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
 }
 
 .feature-card__title {
   font-family: var(--font-heading);
   font-size: 20px;
-  font-weight: 500;
-  color: var(--text);
+  font-weight: 600;
+  color: var(--blue);
   margin-bottom: 10px;
 }
 
@@ -660,9 +680,12 @@ main, .footer {
 
 .product-card__image {
   position: relative;
-  aspect-ratio: 4 / 3;
-  background: var(--neutral);
+  aspect-ratio: 1;
+  background: var(--white);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-card__placeholder {
@@ -714,7 +737,8 @@ main, .footer {
 .product-card__title {
   font-family: var(--font-heading);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--blue);
   margin-bottom: 6px;
 }
 
@@ -739,16 +763,17 @@ main, .footer {
 .product-card__order {
   padding: 8px 20px;
   font-size: 14px;
-  font-weight: 500;
-  color: var(--blue);
-  border: 1.5px solid var(--blue);
+  font-weight: 600;
+  color: var(--orange);
+  border: 1.5px solid var(--orange);
   border-radius: var(--radius-sm);
   transition: all var(--transition);
 }
 
 .product-card__order:hover {
-  background: var(--blue);
+  background: var(--orange);
   color: var(--white);
+  transform: translateY(-1px);
 }
 
 /* =============================================
@@ -861,7 +886,8 @@ main, .footer {
 .cta-banner__title {
   font-family: var(--font-heading);
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
+  color: var(--blue);
   margin-bottom: 6px;
 }
 
@@ -912,9 +938,9 @@ main, .footer {
 .footer__heading {
   font-family: var(--font-heading);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 16px;
-  color: var(--text);
+  color: var(--blue);
 }
 
 .footer__list li {
@@ -953,16 +979,19 @@ main, .footer {
 }
 
 /* =============================================
-   Product Card — Real Seafood Images
+   Product Card — Circular brochure-style images
    ============================================= */
 .product-card__img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 20px;
-  background: linear-gradient(135deg, var(--neutral) 0%, #f0f0f0 100%);
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--orange);
+  padding: 0;
+  background: none;
   transition: transform var(--transition);
   display: block;
+  flex-shrink: 0;
 }
 
 .product-card:hover .product-card__img {
@@ -970,8 +999,7 @@ main, .footer {
 }
 
 .product-card--dark .product-card__img {
-  background: #2a2a2a;
-  padding: 0;
+  border-color: var(--orange);
   object-fit: cover;
 }
 
