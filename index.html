@@ -16,6 +16,12 @@
   <!-- Brochure illustration watermark — barely visible, matches brochure theme -->
   <div class="seafood-watermark" aria-hidden="true"></div>
 
+  <!-- Intro: flying prawn merges into hero logo (once per session) -->
+  <div id="introOverlay" class="intro-overlay" aria-hidden="true">
+    <img id="introPrawn" class="intro-prawn" src="assets/logo-icon.svg" alt="">
+    <span id="introSplash" class="intro-splash"></span>
+  </div>
+
   <!-- Navigation -->
   <header class="header" id="header">
     <nav class="nav container">
@@ -23,12 +29,22 @@
         <img src="assets/logo-real.jpg" alt="THE BLU PRO" class="nav__logo-img">
       </a>
       <ul class="nav__links">
-        <li><a href="#why">Why THE BLU PRO</a></li>
+        <li><a href="#categories">Shop</a></li>
+        <li><a href="#why">Why THE BLU PRO<span class="nav__qmark">?</span></a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="https://wa.me/919281088053" class="btn btn--orange btn--sm nav__cta" target="_blank" rel="noopener">Order on WhatsApp</a>
+      <div class="nav__right">
+        <a href="https://foscos.fssai.gov.in/" class="fssai-badge" target="_blank" rel="noopener noreferrer" title="Verify FSSAI License 13624999000218">
+          <img src="assets/fssai-badge.svg" alt="" class="fssai-badge__icon" width="40" height="40">
+          <span class="fssai-badge__text">
+            <span class="fssai-badge__label">FSSAI Licensed</span>
+            <span class="fssai-badge__no">Lic. No. 13624999000218</span>
+          </span>
+        </a>
+        <a href="https://wa.me/919281088053" class="btn btn--orange btn--sm nav__cta" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -40,6 +56,26 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__grid container section-tile">
+        <div class="hero__visual">
+          <div class="hero__graphics" aria-hidden="true">
+            <span class="hero__bubble hero__bubble--1"></span>
+            <span class="hero__bubble hero__bubble--2"></span>
+            <span class="hero__bubble hero__bubble--3"></span>
+            <span class="hero__ring"></span>
+            <svg class="hero__deco hero__deco--fish" viewBox="0 0 48 24" fill="none" aria-hidden="true">
+              <path d="M4 12c8-6 16-6 24 0s16 6 24 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="8" cy="10" r="1.5" fill="currentColor"/>
+            </svg>
+            <svg class="hero__deco hero__deco--wave" viewBox="0 0 80 20" fill="none" aria-hidden="true">
+              <path d="M0 10 Q10 2 20 10 T40 10 T60 10 T80 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="hero__spark hero__spark--1">✦</span>
+            <span class="hero__spark hero__spark--2">✦</span>
+          </div>
+          <div class="hero__logo-wrap" id="heroLogoTarget">
+            <img src="assets/logo-real.jpg" alt="THE BLU PRO" class="hero__logo" id="heroLogo">
+          </div>
+        </div>
         <div class="hero__content">
           <p class="hero__eyebrow">Suryalanka Coast → Hyderabad</p>
           <h1 class="hero__title">
@@ -62,12 +98,84 @@
             </a>
           </div>
         </div>
-        <div class="hero__visual">
-          <div class="hero__logo-wrap">
-            <div class="hero__circle hero__circle--outer"></div>
-            <div class="hero__circle hero__circle--inner"></div>
-            <img src="assets/logo-real.jpg" alt="THE BLU PRO" class="hero__logo">
-          </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <div class="trust-bar" aria-label="Service highlights">
+      <div class="trust-bar__track">
+        <span>24-Hour Suryalanka → Hyderabad</span>
+        <span>FSSAI Certified Processing</span>
+        <span>Ready-To-Cook · Zero Waste</span>
+        <span>1500+ Happy Orders</span>
+        <span>Cold-Chain Doorstep Delivery</span>
+        <span>Order on WhatsApp</span>
+        <span>24-Hour Suryalanka → Hyderabad</span>
+        <span>FSSAI Certified Processing</span>
+        <span>Ready-To-Cook · Zero Waste</span>
+        <span>1500+ Happy Orders</span>
+        <span>Cold-Chain Doorstep Delivery</span>
+        <span>Order on WhatsApp</span>
+      </div>
+    </div>
+
+    <!-- Shop by Category -->
+    <section class="categories" id="categories">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__eyebrow">Browse</p>
+          <h2 class="section-header__title">Shop by Category</h2>
+          <p class="section-header__desc">Premium live-cuts and ready-to-cook seafood — from the coast to your kitchen.</p>
+        </header>
+        <div class="categories__grid">
+          <button type="button" class="category-card" data-filter="prawns">
+            <div class="category-card__img-wrap">
+              <img src="assets/brochure-imgs/p11_img2.png" alt="" class="category-card__img">
+            </div>
+            <h3 class="category-card__title">Prawns</h3>
+            <p class="category-card__desc">Deveined, tail-on. Tiger, white &amp; sea prawns.</p>
+            <span class="category-card__link">Shop Prawns →</span>
+          </button>
+          <button type="button" class="category-card" data-filter="saltwater">
+            <div class="category-card__img-wrap">
+              <img src="assets/product-imgs/fish/seer-fish.png" alt="" class="category-card__img">
+            </div>
+            <h3 class="category-card__title">Sea Fish</h3>
+            <p class="category-card__desc">Vanjaram, pomfret, mackerel &amp; more.</p>
+            <span class="category-card__link">Shop Sea Fish →</span>
+          </button>
+          <button type="button" class="category-card" data-filter="freshwater">
+            <div class="category-card__img-wrap">
+              <img src="assets/product-imgs/fish/rohu.png" alt="" class="category-card__img">
+            </div>
+            <h3 class="category-card__title">Fresh Water Fish</h3>
+            <p class="category-card__desc">Rohu, catla, murrel &amp; river favourites.</p>
+            <span class="category-card__link">Shop Fresh Water →</span>
+          </button>
+          <button type="button" class="category-card" data-filter="crab">
+            <div class="category-card__img-wrap">
+              <img src="assets/brochure-imgs/p7_img2.png" alt="" class="category-card__img">
+            </div>
+            <h3 class="category-card__title">Crabs</h3>
+            <p class="category-card__desc">Live mud crab &amp; blue sea crab.</p>
+            <span class="category-card__link">Shop Crabs →</span>
+          </button>
+          <button type="button" class="category-card" data-filter="combo">
+            <div class="category-card__img-wrap">
+              <img src="assets/brochure-imgs/p5_img2.png" alt="" class="category-card__img">
+            </div>
+            <h3 class="category-card__title">Combos</h3>
+            <p class="category-card__desc">Curated coastal feast packs for families.</p>
+            <span class="category-card__link">Shop Combos →</span>
+          </button>
+          <a href="assets/blupro-brochure.pdf" class="category-card category-card--brochure" download>
+            <div class="category-card__img-wrap category-card__img-wrap--cover">
+              <img src="assets/brochure-cover.png" alt="" class="category-card__img">
+            </div>
+            <h3 class="category-card__title">Full Catalogue</h3>
+            <p class="category-card__desc">Download our complete BLU PRO brochure.</p>
+            <span class="category-card__link">Download PDF →</span>
+          </a>
         </div>
       </div>
     </section>
@@ -77,50 +185,74 @@
       <div class="container section-tile">
         <header class="section-header">
           <p class="section-header__eyebrow">THE BLU PRO Standard</p>
-          <h2 class="section-header__title">Why THE BLU PRO</h2>
+          <h2 class="section-header__title">Why THE BLU PRO<span class="section-header__qmark">?</span></h2>
           <p class="section-header__desc">Every detail engineered for freshness, hygiene, and convenience — from net to your plate.</p>
         </header>
         <div class="why__grid">
           <article class="feature-card">
+            <span class="feature-card__index" aria-hidden="true">01</span>
             <div class="feature-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <h3 class="feature-card__title">24-Hour Net-to-Plate</h3>
+            <h3 class="feature-card__title">
+              <span class="feature-card__highlight">24 Hours</span>
+              Net-to-Plate
+            </h3>
             <p class="feature-card__desc">Caught at dawn on the Suryalanka Coast, at your doorstep in Hyderabad within 24 hours.</p>
           </article>
           <article class="feature-card">
+            <span class="feature-card__index" aria-hidden="true">02</span>
             <div class="feature-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
             </div>
-            <h3 class="feature-card__title">Ready-To-Cook</h3>
+            <h3 class="feature-card__title">
+              <span class="feature-card__highlight">Zero Prep</span>
+              Ready-To-Cook
+            </h3>
             <p class="feature-card__desc">Professionally cleaned, deveined, and portioned. Open the pack and start cooking.</p>
           </article>
           <article class="feature-card">
+            <span class="feature-card__index" aria-hidden="true">03</span>
             <div class="feature-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6"/><path d="M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
             </div>
-            <h3 class="feature-card__title">Zero Waste</h3>
+            <h3 class="feature-card__title">
+              <span class="feature-card__highlight">No Excess</span>
+              Zero Waste
+            </h3>
             <p class="feature-card__desc">Precise portions mean no excess. Every gram you pay for goes into your meal.</p>
           </article>
           <article class="feature-card">
+            <span class="feature-card__index" aria-hidden="true">04</span>
             <div class="feature-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h3 class="feature-card__title">Hygienic Processing</h3>
+            <h3 class="feature-card__title">
+              <span class="feature-card__highlight">FSSAI Certified</span>
+              Hygienic Processing
+            </h3>
             <p class="feature-card__desc">FSSAI-certified facility with cold-chain integrity maintained at every step.</p>
           </article>
           <article class="feature-card">
+            <span class="feature-card__index" aria-hidden="true">05</span>
             <div class="feature-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
             </div>
-            <h3 class="feature-card__title">Doorstep Delivery</h3>
+            <h3 class="feature-card__title">
+              <span class="feature-card__highlight">Cold Chain</span>
+              Doorstep Delivery
+            </h3>
             <p class="feature-card__desc">Insulated packaging ensures your seafood arrives at peak freshness, every time.</p>
           </article>
           <article class="feature-card">
+            <span class="feature-card__index" aria-hidden="true">06</span>
             <div class="feature-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
             </div>
-            <h3 class="feature-card__title">1500+ Happy Orders</h3>
+            <h3 class="feature-card__title">
+              <span class="feature-card__highlight">1500+ Orders</span>
+              Happy Customers
+            </h3>
             <p class="feature-card__desc">Trusted by families across Hyderabad who refuse to compromise on quality.</p>
           </article>
         </div>
@@ -193,6 +325,61 @@
       </div>
     </section>
 
+    <!-- Top Sellers -->
+    <section class="featured" id="featured">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__eyebrow">Customer Favourites</p>
+          <h2 class="section-header__title">Top Selling Products</h2>
+        </header>
+        <div class="featured__scroll">
+          <article class="featured-card">
+            <div class="featured-card__img-wrap">
+              <img src="assets/brochure-imgs/p11_img2.png" alt="Jumbo Tiger Prawns" class="featured-card__img">
+              <span class="featured-card__badge">Bestseller</span>
+            </div>
+            <h3 class="featured-card__title">Jumbo Tiger Prawns</h3>
+            <p class="featured-card__price">₹899 <small>/500g</small></p>
+            <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Jumbo%20Tiger%20Prawns" class="featured-card__btn" target="_blank" rel="noopener">Order</a>
+          </article>
+          <article class="featured-card">
+            <div class="featured-card__img-wrap">
+              <img src="assets/product-imgs/fish/seer-fish.png" alt="Seer Fish" class="featured-card__img">
+              <span class="featured-card__badge">Popular</span>
+            </div>
+            <h3 class="featured-card__title">Seer Fish (Vanjaram)</h3>
+            <p class="featured-card__price">₹899 <small>/500g</small></p>
+            <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Seer%20Fish" class="featured-card__btn" target="_blank" rel="noopener">Order</a>
+          </article>
+          <article class="featured-card">
+            <div class="featured-card__img-wrap">
+              <img src="assets/product-imgs/fish/white-pomfret.png" alt="Silver Pomfret" class="featured-card__img">
+            </div>
+            <h3 class="featured-card__title">Silver Pomfret</h3>
+            <p class="featured-card__price">₹699 <small>/500g</small></p>
+            <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Silver%20Pomfret" class="featured-card__btn" target="_blank" rel="noopener">Order</a>
+          </article>
+          <article class="featured-card">
+            <div class="featured-card__img-wrap">
+              <img src="assets/product-imgs/fish/rohu.png" alt="Rohu Fish" class="featured-card__img">
+            </div>
+            <h3 class="featured-card__title">Rohu Fish</h3>
+            <p class="featured-card__price">₹349 <small>/500g</small></p>
+            <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Rohu%20Fish" class="featured-card__btn" target="_blank" rel="noopener">Order</a>
+          </article>
+          <article class="featured-card">
+            <div class="featured-card__img-wrap">
+              <img src="assets/brochure-imgs/p7_img2.png" alt="Blue Crab" class="featured-card__img">
+              <span class="featured-card__badge featured-card__badge--accent">Premium</span>
+            </div>
+            <h3 class="featured-card__title">Blue Sea Crab</h3>
+            <p class="featured-card__price">₹950 <small>/kg</small></p>
+            <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Blue%20Sea%20Crab" class="featured-card__btn" target="_blank" rel="noopener">Order</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Products -->
     <section class="products" id="products">
       <div class="container section-tile">
@@ -201,14 +388,6 @@
           <h2 class="section-header__title">Premium Products</h2>
           <p class="section-header__desc">20+ varieties handpicked from the coast. Available in 250g | 500g | 1kg packs.</p>
         </header>
-        <div class="products__filters" role="tablist" aria-label="Product categories">
-          <button type="button" class="filter-btn filter-btn--active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button type="button" class="filter-btn" data-filter="prawns" role="tab" aria-selected="false">Prawns</button>
-          <button type="button" class="filter-btn" data-filter="saltwater" role="tab" aria-selected="false">Salt Water Fish</button>
-          <button type="button" class="filter-btn" data-filter="freshwater" role="tab" aria-selected="false">Fresh Water Fish</button>
-          <button type="button" class="filter-btn" data-filter="crab" role="tab" aria-selected="false">Crab</button>
-          <button type="button" class="filter-btn" data-filter="combo" role="tab" aria-selected="false">Combos</button>
-        </div>
         <div class="products__grid">
 
           <!-- PRAWNS -->
@@ -258,7 +437,7 @@
           <!-- SALT WATER FISH -->
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p5_img3.png" alt="Sea Bass" class="product-card__img">
+              <img src="assets/product-imgs/fish/sea-bass.png" alt="Sea Bass" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Sea Bass</h3>
@@ -272,7 +451,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p5_img1.png" alt="Seer Fish" class="product-card__img">
+              <img src="assets/product-imgs/fish/seer-fish.png" alt="Seer Fish" class="product-card__img">
               <span class="product-card__badge">Popular</span>
             </div>
             <div class="product-card__body">
@@ -287,7 +466,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p5_img2.png" alt="Grouper" class="product-card__img">
+              <img src="assets/product-imgs/fish/bangaaru-thiiga.png" alt="Grouper" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Grouper</h3>
@@ -301,7 +480,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p5_img0.png" alt="Silver Pomfret" class="product-card__img">
+              <img src="assets/product-imgs/fish/white-pomfret.png" alt="Silver Pomfret" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Silver Pomfret</h3>
@@ -315,7 +494,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p6_img0.png" alt="Black Pomfret" class="product-card__img">
+              <img src="assets/product-imgs/fish/gaddi-chaapa.png" alt="Black Pomfret" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Black Pomfret</h3>
@@ -329,7 +508,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p6_img1.png" alt="Indian Mackerel" class="product-card__img">
+              <img src="assets/product-imgs/fish/mackerel.png" alt="Indian Mackerel" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Indian Mackerel</h3>
@@ -343,7 +522,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p6_img2.png" alt="Ribbon Fish" class="product-card__img">
+              <img src="assets/product-imgs/fish/bommidai.png" alt="Ribbon Fish" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Ribbon Fish</h3>
@@ -357,7 +536,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p6_img3.png" alt="Red Grouper" class="product-card__img">
+              <img src="assets/product-imgs/fish/red-snapper.png" alt="Red Grouper" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Red Grouper</h3>
@@ -371,7 +550,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p7_img0.png" alt="Milk Shark" class="product-card__img">
+              <img src="assets/product-imgs/fish/milk-shark.png" alt="Milk Shark" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Milk Shark</h3>
@@ -399,7 +578,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p7_img3.png" alt="Indian Salmon" class="product-card__img">
+              <img src="assets/product-imgs/fish/salmon.png" alt="Indian Salmon" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Indian Salmon</h3>
@@ -413,7 +592,7 @@
 
           <article class="product-card" data-category="saltwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p8_img0.png" alt="Mullet Fish" class="product-card__img">
+              <img src="assets/product-imgs/fish/mullet.png" alt="Mullet Fish" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Mullet Fish</h3>
@@ -428,7 +607,7 @@
           <!-- FRESH WATER FISH -->
           <article class="product-card" data-category="freshwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p9_img0.png" alt="Rohu Fish" class="product-card__img">
+              <img src="assets/product-imgs/fish/rohu.png" alt="Rohu Fish" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Rohu Fish</h3>
@@ -442,7 +621,7 @@
 
           <article class="product-card" data-category="freshwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p9_img3.png" alt="Catla Fish" class="product-card__img">
+              <img src="assets/product-imgs/fish/catla.png" alt="Catla Fish" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Catla Fish</h3>
@@ -456,7 +635,7 @@
 
           <article class="product-card" data-category="freshwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p9_img1.png" alt="Mrigal" class="product-card__img">
+              <img src="assets/product-imgs/fish/mrigal.png" alt="Mrigal" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Mrigal</h3>
@@ -470,7 +649,7 @@
 
           <article class="product-card" data-category="freshwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p9_img2.png" alt="Grass Carp" class="product-card__img">
+              <img src="assets/product-imgs/fish/basa.png" alt="Grass Carp" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Grass Carp</h3>
@@ -484,7 +663,7 @@
 
           <article class="product-card" data-category="freshwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p10_img0.png" alt="Murrel" class="product-card__img">
+              <img src="assets/product-imgs/fish/murrel.png" alt="Murrel" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Murrel (Snakehead)</h3>
@@ -498,7 +677,7 @@
 
           <article class="product-card" data-category="freshwater">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p10_img2.png" alt="Chinese Pomfret" class="product-card__img">
+              <img src="assets/product-imgs/fish/chinese-pomfret.png" alt="Chinese Pomfret" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__title">Chinese Pomfret</h3>
@@ -513,15 +692,30 @@
           <!-- CRAB -->
           <article class="product-card product-card--dark" data-category="crab">
             <div class="product-card__image">
-              <img src="assets/brochure-imgs/p7_img2.png" alt="Blue Crab" class="product-card__img">
-              <span class="product-card__badge">Premium</span>
+              <img src="assets/brochure-imgs/p7_img2.png" alt="Mud Crab" class="product-card__img">
+              <span class="product-card__badge">Live</span>
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__title">Blue Crab</h3>
-              <p class="product-card__desc">Hand-picked, pasteurized. 250g | 500g | 1kg.</p>
+              <h3 class="product-card__title">Mud Crab</h3>
+              <p class="product-card__desc">Live, hand-picked. Rich, sweet meat. Per kg.</p>
               <div class="product-card__footer">
-                <span class="product-card__price">₹599 <small>/250g</small></span>
-                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Blue%20Crab" class="product-card__order" target="_blank" rel="noopener">Order</a>
+                <span class="product-card__price">₹950 <small>/kg</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Mud%20Crab" class="product-card__order" target="_blank" rel="noopener">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card product-card--dark" data-category="crab">
+            <div class="product-card__image">
+              <img src="assets/brochure-imgs/p7_img2.png" alt="Blue Sea Crab" class="product-card__img">
+              <span class="product-card__badge product-card__badge--accent">Premium</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Blue Sea Crab</h3>
+              <p class="product-card__desc">Pasteurized, premium quality. Per kg.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">₹950 <small>/kg</small></span>
+                <a href="https://wa.me/919281088053?text=Hi%2C%20I%27d%20like%20to%20order%20Blue%20Sea%20Crab" class="product-card__order" target="_blank" rel="noopener">Order</a>
               </div>
             </div>
           </article>
@@ -553,8 +747,11 @@
           <p class="section-header__eyebrow">Testimonials</p>
           <h2 class="section-header__title">What Our Customers Say</h2>
         </header>
-        <div class="reviews__grid">
-          <blockquote class="review-card">
+        <div class="reviews__carousel" aria-roledescription="carousel" aria-label="Customer testimonials">
+          <button type="button" class="reviews__nav reviews__nav--prev" aria-label="Previous review">‹</button>
+          <div class="reviews__viewport">
+            <div class="reviews__track" id="reviewsTrack">
+          <blockquote class="review-card review-card--slide">
             <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="review-card__text">"The prawns arrived still cold, perfectly cleaned. I've never had seafood this fresh in Hyderabad. It genuinely tastes like it was caught hours ago."</p>
             <footer class="review-card__author">
@@ -562,7 +759,7 @@
               <span class="review-card__tag">Freshness</span>
             </footer>
           </blockquote>
-          <blockquote class="review-card">
+          <blockquote class="review-card review-card--slide">
             <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="review-card__text">"Zero prep work needed. They were deveined, washed, and ready to cook. Saved me 30 minutes — and the taste was restaurant quality."</p>
             <footer class="review-card__author">
@@ -570,7 +767,7 @@
               <span class="review-card__tag">Cleaning</span>
             </footer>
           </blockquote>
-          <blockquote class="review-card">
+          <blockquote class="review-card review-card--slide">
             <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="review-card__text">"The packaging is immaculate — vacuum sealed, insulated box, ice packs intact. Feels like a luxury unboxing every single time."</p>
             <footer class="review-card__author">
@@ -578,7 +775,7 @@
               <span class="review-card__tag">Packaging</span>
             </footer>
           </blockquote>
-          <blockquote class="review-card">
+          <blockquote class="review-card review-card--slide">
             <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="review-card__text">"Ordered the Coastal Feast Combo for a dinner party. Every guest asked where the seafood came from. THE BLU PRO is now our only source."</p>
             <footer class="review-card__author">
@@ -586,7 +783,7 @@
               <span class="review-card__tag">Taste</span>
             </footer>
           </blockquote>
-          <blockquote class="review-card">
+          <blockquote class="review-card review-card--slide">
             <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="review-card__text">"WhatsApp ordering, next-day delivery, no hassle. I don't have to drive to the market anymore. This is how premium service should work."</p>
             <footer class="review-card__author">
@@ -594,7 +791,7 @@
               <span class="review-card__tag">Convenience</span>
             </footer>
           </blockquote>
-          <blockquote class="review-card">
+          <blockquote class="review-card review-card--slide">
             <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="review-card__text">"My kids actually ask for prawns now. The quality difference from local market fish is night and day. Worth every rupee."</p>
             <footer class="review-card__author">
@@ -602,6 +799,10 @@
               <span class="review-card__tag">Taste</span>
             </footer>
           </blockquote>
+            </div>
+          </div>
+          <button type="button" class="reviews__nav reviews__nav--next" aria-label="Next review">›</button>
+          <div class="reviews__dots" id="reviewsDots" role="tablist" aria-label="Review slides"></div>
         </div>
       </div>
     </section>
@@ -651,6 +852,10 @@
       <p>&copy; 2026 THE BLU PRO. All rights reserved.</p>
     </div>
   </footer>
+
+  <a href="https://wa.me/919281088053" class="wa-float" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <script src="js/main.js"></script>
 </body>
