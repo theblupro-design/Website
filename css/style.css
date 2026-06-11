@@ -1313,46 +1313,41 @@ main, .footer {
    Who Are We
    ============================================= */
 .about {
-  padding: 80px 40px;
+  padding: 64px 40px;
   background: transparent;
   position: relative;
   z-index: 1;
 }
 
-.about .section-header {
+.about .section-tile {
+  padding: 40px 48px;
+}
+
+.about__header {
+  text-align: left;
+  margin: 0 0 28px;
+  max-width: none;
+}
+
+.about__header .section-header__title {
   margin-bottom: 0;
-}
-
-.about__founder {
-  margin-top: 48px;
-  padding-top: 40px;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.about__founder-title {
-  font-family: var(--font-heading);
-  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
-  font-weight: 600;
-  color: var(--blue);
-  text-align: center;
-  margin-bottom: 36px;
 }
 
 .about__founder-layout {
   display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
-  gap: 32px 40px;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 32px 48px;
   align-items: start;
-  max-width: 680px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .about__founder-profile {
   margin: 0;
+  justify-self: start;
 }
 
 .about__founder-photo {
-  width: 132px;
+  width: 148px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 24px rgba(11, 54, 184, 0.12);
@@ -1373,7 +1368,7 @@ main, .footer {
   flex-direction: column;
   gap: 4px;
   margin-top: 12px;
-  text-align: center;
+  text-align: left;
 }
 
 .about__founder-name {
@@ -1391,11 +1386,16 @@ main, .footer {
   color: var(--orange);
 }
 
+.about__founder-text {
+  max-width: none;
+}
+
 .about__founder-text p {
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 15px;
+  line-height: 1.7;
   color: var(--text-muted);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+  text-align: left;
 }
 
 .about__founder-text p:last-child {
@@ -1404,23 +1404,32 @@ main, .footer {
 
 @media (max-width: 768px) {
   .about {
-    padding: 64px 0;
+    padding: 48px 0;
+  }
+
+  .about .section-tile {
+    padding: 32px 20px;
+  }
+
+  .about__header {
+    text-align: center;
+    margin-bottom: 24px;
   }
 
   .about__founder-layout {
     grid-template-columns: 1fr;
     gap: 28px;
-    max-width: 520px;
   }
 
   .about__founder-profile {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
   }
 
-  .about__founder-text {
-    text-align: left;
+  .about__founder-caption {
+    text-align: center;
   }
 }
 
